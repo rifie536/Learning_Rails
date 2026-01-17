@@ -72,9 +72,16 @@ ruby -v
 #!/usr/bin/env ruby
 
 puts "Hello, Rails!"
+# RUBY_VERSION は Ruby の組み込み定数（大文字で始まる）で、宣言なしで使用可能
 puts "Ruby version: #{RUBY_VERSION}"
+# Time は Ruby の組み込みクラス、now はそのクラスメソッドで、宣言なしで使用可能
 puts "Today is: #{Time.now.strftime('%Y-%m-%d')}"
 ```
+
+**補足説明:**
+- `RUBY_VERSION`: Rubyの組み込み定数です。大文字で始まる名前は定数を表し、Rubyが自動的に定義しています。変数宣言は不要です。
+- `Time.now`: `Time`はRubyの組み込みクラス、`now`はそのクラスメソッドです。`require`や宣言なしで使用できます。
+- これらは「代入」ではなく、組み込みの定数やメソッドを「参照」しているだけです。
 
 実行：
 
@@ -162,19 +169,47 @@ rm -rf test_app
 1. VS Codeでコマンドパレットを開く（Cmd+Shift+P / Ctrl+Shift+P）
 2. "Extensions: Install Extensions" を選択
 3. 以下の拡張機能をインストール：
-   - Ruby LSP
-   - ERB Formatter/Beautify
-   - Rails
+
+**必須:**
+   - **Shopify.ruby-lsp** - 公式Ruby Language Server（コード補完、定義ジャンプ）
+   - **bung87.rails** - Rails専用機能（ファイルジャンプ、ルーティング補完）
+   - **kaiwood.endwise** - Rubyのend自動補完
+
+**推奨:**
+   - **aliariff.vscode-erb-beautify** - ERBフォーマッター
+   - **rebornix.ruby** - 構文ハイライト強化
+
+**オプション:**
+   - **eamodio.gitlens** - Git履歴表示（便利だが必須ではない）
 
 4. 設定を確認：
-   - ファイル → 基本設定 → 設定
+   - ファイル → 基本設定 → 設定（Cmd+,）
    - "Format On Save" を有効化
-   - Tab Size を 2 に設定
+   - "Tab Size" を 2 に設定
+   - "Editor: Default Formatter" で Ruby LSP を選択
+
+5. Ruby LSP の設定（推奨）：
+   - settings.json を開く（コマンドパレット → "Preferences: Open User Settings (JSON)"）
+   - 以下を追加：
+   ```json
+   {
+     "[ruby]": {
+       "editor.defaultFormatter": "Shopify.ruby-lsp",
+       "editor.formatOnSave": true,
+       "editor.tabSize": 2,
+       "editor.insertSpaces": true
+     },
+     "rubyLsp.enableExperimentalFeatures": true
+   }
+   ```
 
 **確認事項:**
-- [ ] Ruby拡張機能がインストールされている
+- [ ] Shopify.ruby-lsp がインストールされている
+- [ ] bung87.rails がインストールされている
+- [ ] kaiwood.endwise がインストールされている
 - [ ] Format on Save が有効
 - [ ] Tab Size が 2 に設定されている
+- [ ] Ruby LSP が正常に動作している（.rbファイルを開いて確認）
 
 ## チェックリスト
 
