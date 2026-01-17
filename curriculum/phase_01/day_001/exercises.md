@@ -197,11 +197,14 @@ rm -rf test_app
        "editor.defaultFormatter": "Shopify.ruby-lsp",
        "editor.formatOnSave": true,
        "editor.tabSize": 2,
-       "editor.insertSpaces": true
+       "editor.insertSpaces": true,
+       "editor.semanticHighlighting.enabled": true
      },
-     "rubyLsp.enableExperimentalFeatures": true
+     "rubyLsp.formatter": "auto"
    }
    ```
+
+   **注意:** すでにRuby関連の設定がある場合は、マージしてください。
 
 **確認事項:**
 - [ ] Shopify.ruby-lsp がインストールされている
