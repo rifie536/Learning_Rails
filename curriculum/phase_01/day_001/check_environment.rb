@@ -64,9 +64,9 @@ class EnvironmentChecker
     print "Bundler 確認... "
     version = `bundle -v`.strip
 
-    if version.include?("Bundler")
+    if version.match?(/^\d+\.\d+/) || version.include?("Bundler")
       puts "✓ OK"
-      puts "  #{version}"
+      puts "  Bundler version #{version}"
     else
       puts "✗ NG"
       @errors << "Bundlerがインストールされていません"
