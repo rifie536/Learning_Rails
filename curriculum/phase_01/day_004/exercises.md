@@ -19,7 +19,7 @@ controller.route("create")   # => "新規作成"
 controller.route("invalid")  # => "エラー：アクションが見つかりません"
 ```
 
-`solutions/exercise1.rb`に実装してください。
+`exercises/exercise1.rb`に実装してください。
 
 ---
 
@@ -47,7 +47,7 @@ user.age = 26
 puts user.age       # => 26
 ```
 
-`solutions/exercise2.rb`に実装してください。
+`exercises/exercise2.rb`に実装してください。
 
 ---
 
@@ -74,7 +74,7 @@ puts repo.find_by_name("太郎")[:email]  # => "taro@example.com"
 puts repo.find_by_id(2)[:name]          # => "花子"
 ```
 
-`solutions/exercise3.rb`に実装してください。
+`exercises/exercise3.rb`に実装してください。
 
 ---
 
@@ -105,7 +105,7 @@ errors = person.validate
 puts errors.empty? ? "OK" : errors.join(", ")
 ```
 
-`solutions/exercise4.rb`に実装してください。
+`exercises/exercise4.rb`に実装してください。
 
 ---
 
@@ -137,7 +137,7 @@ emitter.emit(:user_created, "太郎")
 # => ログ記録: 太郎が作成されました
 ```
 
-`solutions/exercise5.rb`に実装してください。
+`exercises/exercise5.rb`に実装してください。
 
 ---
 
@@ -171,7 +171,7 @@ puts result[0][:name]  # => "次郎"
 puts result[1][:name]  # => "花子"
 ```
 
-`solutions/exercise6.rb`に実装してください。
+`exercises/exercise6.rb`に実装してください。
 
 ---
 
@@ -203,6 +203,11 @@ ruby solutions/exercise3.rb
 ruby solutions/exercise4.rb
 ruby solutions/exercise5.rb
 ruby solutions/exercise6.rb
+
+# 解答例の確認（詰まったら参照）
+ruby solutions/exercise1.rb
+ruby solutions/exercise2.rb
+# ...
 ```
 
 ## 完了後

@@ -69,6 +69,12 @@ binding.pry  # コードの実行を中断してREPLに入る
 
 ## 学習の流れ
 
+1. サンプルコード（`examples/`）を読んで実行する
+2. 解説を読んで理解を深める
+3. 演習課題（`exercises/`）に取り組む
+4. Claude にレビューを依頼する
+5. 解答例（`solutions/`）と比較する
+
 1. サンプルコード（`examples/`）を実行して学ぶ
 2. 解説を読んで理解を深める
 3. 演習課題（`exercises.md`）に取り組む
@@ -79,18 +85,18 @@ binding.pry  # コードの実行を中断してREPLに入る
 ```
 day_005/
 ├── README.md              # このファイル
-├── examples/              # サンプルコード・説明
-│   ├── 01_git_basics.md
-│   ├── 02_git_workflow.md
-│   ├── 03_bundler_guide.md
-│   ├── 04_debugging.rb
-│   └── 05_practice.rb
-├── exercises.md           # 演習課題
-└── solutions/             # 解答例・コマンド集
-    ├── git_commands.md
-    ├── bundler_guide.md
-    └── debugging_practice.rb
+├── examples/              # サンプルコード
+│   └── ...
+├── exercises.md           # 演習課題の説明
+├── exercises/             # 演習課題（あなたが実装する）
+│   ├── README.md
+│   ├── exercise1.rb
+│   └── ...
+└── solutions/             # 解答例（詰まったら参照）
+    ├── exercise1.rb
+    └── ...
 ```
+
 
 ## 環境確認
 

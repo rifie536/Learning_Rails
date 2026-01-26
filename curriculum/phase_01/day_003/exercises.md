@@ -26,7 +26,7 @@ book.title = "改訂版Ruby入門"
 book.display
 ```
 
-`solutions/exercise1.rb`に実装してください。
+`exercises/exercise1.rb`に実装してください。
 
 ---
 
@@ -59,7 +59,7 @@ account.info
 account.withdraw(20000)  # エラーメッセージを表示
 ```
 
-`solutions/exercise2.rb`に実装してください。
+`exercises/exercise2.rb`に実装してください。
 
 ---
 
@@ -93,7 +93,7 @@ puts Employee.average_salary
 # => 385000.0
 ```
 
-`solutions/exercise3.rb`に実装してください。
+`exercises/exercise3.rb`に実装してください。
 
 ---
 
@@ -134,7 +134,7 @@ puts "Mage の攻撃: #{mage.attack} ダメージ"
 mage.status  # MP が10減る
 ```
 
-`solutions/exercise4.rb`に実装してください。
+`exercises/exercise4.rb`に実装してください。
 
 ---
 
@@ -173,7 +173,7 @@ puts post.comment_count  # => 2
 post.comments.each { |c| puts "コメント: #{c}" }
 ```
 
-`solutions/exercise5.rb`に実装してください。
+`exercises/exercise5.rb`に実装してください。
 
 ---
 
@@ -216,7 +216,7 @@ puts "ハッシュタグ: #{tweet.hashtags.join(", ")}"
 puts "花子にいいねされている? #{tweet.liked_by?("花子")}"
 ```
 
-`solutions/exercise6.rb`に実装してください。
+`exercises/exercise6.rb`に実装してください。
 
 ---
 
@@ -248,6 +248,11 @@ ruby solutions/exercise3.rb
 ruby solutions/exercise4.rb
 ruby solutions/exercise5.rb
 ruby solutions/exercise6.rb
+
+# 解答例の確認（詰まったら参照）
+ruby solutions/exercise1.rb
+ruby solutions/exercise2.rb
+# ...
 ```
 
 ## 完了後

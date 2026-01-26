@@ -243,6 +243,11 @@ cd ~/git_practice
 git init
 git add .
 git commit -m "Initial commit"
+
+# 解答例の確認（詰まったら参照）
+ruby solutions/exercise1.rb
+ruby solutions/exercise2.rb
+# ...
 ```
 
 ### 演習3（Bundler）

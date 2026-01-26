@@ -48,8 +48,15 @@ users.select { |u| u.admin? }
 
 1. サンプルコード（`examples/`）を読んで実行する
 2. 解説を読んで理解を深める
-3. 演習課題（`exercises.md`）に取り組む
-4. 解答例（`solutions/`）と比較する
+3. 演習課題（`exercises/`）に取り組む
+4. Claude にレビューを依頼する
+5. 解答例（`solutions/`）と比較する
+
+1. サンプルコード（`examples/`）を読んで実行する
+2. 解説を読んで理解を深める
+3. 演習課題（`exercises/`）に取り組む
+4. Claude にレビューを依頼する
+5. 解答例（`solutions/`）と比較する
 
 ## ファイル構成
 
@@ -62,8 +69,13 @@ day_002/
 │   ├── 03_lambda.rb
 │   ├── 04_proc_vs_lambda.rb
 │   └── 05_iterators.rb
-├── exercises.md           # 演習課題
-└── solutions/             # 解答例
+├── exercises.md           # 演習課題の説明
+├── exercises/             # 演習課題（あなたが実装する）
+│   ├── README.md
+│   ├── exercise1.rb
+│   ├── exercise2.rb
+│   └── ...
+└── solutions/             # 解答例（詰まったら参照）
     ├── exercise1.rb
     ├── exercise2.rb
     └── ...

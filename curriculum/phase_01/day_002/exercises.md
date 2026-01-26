@@ -21,7 +21,7 @@ end
 # 3回目の実行
 ```
 
-`solutions/exercise1.rb`に実装してください。
+`exercises/exercise1.rb`に実装してください。
 
 ---
 
@@ -45,7 +45,7 @@ puts result.inspect
 # => [12, 14, 16, 18, 20]
 ```
 
-`solutions/exercise2.rb`に実装してください。
+`exercises/exercise2.rb`に実装してください。
 
 ---
 
@@ -72,7 +72,7 @@ puts filter_by(numbers, greater_than_five).inspect
 # => [6, 7, 8, 9, 10]
 ```
 
-`solutions/exercise3.rb`に実装してください。
+`exercises/exercise3.rb`に実装してください。
 
 ---
 
@@ -85,7 +85,7 @@ puts filter_by(numbers, greater_than_five).inspect
 3. Procのreturnがメソッド全体から抜けることを確認
 4. Lambdaのreturnがラムダ自身から抜けるだけであることを確認
 
-`solutions/exercise4.rb`に実装してください。
+`exercises/exercise4.rb`に実装してください。
 
 ---
 
@@ -134,7 +134,7 @@ p group_by_role(users).keys
 # => ["admin", "user"]
 ```
 
-`solutions/exercise5.rb`に実装してください。
+`exercises/exercise5.rb`に実装してください。
 
 ---
 
@@ -168,7 +168,7 @@ calc2.apply(&double).apply(&add_ten)
 puts calc2.result  # => 20
 ```
 
-`solutions/exercise6.rb`に実装してください。
+`exercises/exercise6.rb`に実装してください。
 
 ---
 
@@ -194,6 +194,14 @@ ruby examples/04_proc_vs_lambda.rb
 ruby examples/05_iterators.rb
 
 # 演習の実行
+ruby exercises/exercise1.rb
+ruby exercises/exercise2.rb
+ruby exercises/exercise3.rb
+ruby exercises/exercise4.rb
+ruby exercises/exercise5.rb
+ruby exercises/exercise6.rb
+
+# 解答例の確認（詰まったら参照）
 ruby solutions/exercise1.rb
 ruby solutions/exercise2.rb
 ruby solutions/exercise3.rb
