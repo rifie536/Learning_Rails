@@ -14,22 +14,34 @@ users = [
 ]
 
 # TODO: 1. active_users(users) - アクティブなユーザーの配列を返す
-
+def active_users(users)
+  users.select { |user| user[:active] }
+end
 
 # TODO: 2. user_names(users) - 全ユーザーの名前の配列を返す
-
+def user_names(users)
+  users.map { |user| user[:name] }
+end
 
 # TODO: 3. average_age(users) - 全ユーザーの平均年齢を返す（小数点第1位まで）
-
+def average_age(users)
+  (users.reduce(0) { |sum, user| sum + user[:age] } / users.length.to_f).round(1)
+end
 
 # TODO: 4. admin_count(users) - 管理者の人数を返す
-
+def admin_count(users)
+  users.count { |user| user[:role] == "admin" }
+end
 
 # TODO: 5. oldest_user(users) - 最年長のユーザーを返す
-
+def oldest_user(users)
+  users.max_by { |user| user[:age] }
+end
 
 # TODO: 6. group_by_role(users) - roleでグループ分けしたハッシュを返す
-
+def group_by_role(users)
+  users.group_by { |user| user[:role] }
+end
 
 # テストコード
 puts "=== 演習5: イテレータの総合演習 ==="

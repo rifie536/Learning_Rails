@@ -22,7 +22,11 @@
 # 3回目の実行
 
 # TODO: ここにrepeatメソッドを実装してください
-
+def repeat(count, &block)
+  count.times do |i|
+    block.call(i + 1)
+  end
+end
 
 # テストコード
 puts "=== 演習1: repeatメソッド ==="

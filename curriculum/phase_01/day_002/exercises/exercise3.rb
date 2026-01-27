@@ -24,7 +24,10 @@
 
 # TODO: ここにfilter_byメソッドを実装してください
 # ヒント: Lambda.lambda? メソッドでLambdaかどうかチェックできます
-
+def filter_by(array, filter_lambda)
+  raise ArgumentError, "filter must be a Lambda" unless filter_lambda.lambda?
+  array.select { |element| filter_lambda.call(element) }
+end
 
 # テストコード
 puts "=== 演習3: filter_byメソッド ==="

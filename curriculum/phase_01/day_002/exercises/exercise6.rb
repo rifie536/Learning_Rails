@@ -30,7 +30,20 @@
 # puts calc2.result  # => 20
 
 # TODO: ここにCalculatorクラスを実装してください
+class Calculator
+  def initialize(initial_value)
+    @value = initial_value
+  end
 
+  def apply(&block)
+    @value = block.call(@value)
+    self
+  end
+
+  def result
+    @value
+  end
+end
 
 # テストコード
 puts "=== 演習6: Calculatorクラス ==="

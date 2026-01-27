@@ -20,7 +20,13 @@
 # => [12, 14, 16, 18, 20]
 
 # TODO: ここにtransformメソッドを実装してください
-
+def transform(numbers, *procs)
+  numbers.map do |number|
+    procs.reduce(number) do |result, proc|
+      proc.call(result)
+    end
+  end
+end
 
 # テストコード
 puts "=== 演習2: transformメソッド ==="
